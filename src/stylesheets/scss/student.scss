@@ -1,0 +1,141 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #eeedef;
+}
+
+.student {
+  border: 1px solid #d4d0d4;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.grades {
+  width: 200px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #fff;
+  height: 80vh;
+  
+  width: 55%;
+  border-radius: 15px;
+  display: block;
+  overflow: scroll;
+  overflow-x: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+.input{
+  padding: 10px 10px;
+  input {
+    border: none;
+    border-bottom: 1px solid #dedce0;
+    width: 100%;
+    padding: 5px 2px;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid black;
+    }
+  }
+  .tagsearch {
+    margin-top: 10px;
+  }
+}
+}
+
+.text {
+  .h-5{
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif !important;
+  }
+  p {
+    line-height: 8px;
+    padding: 0 20px;
+  }
+}
+
+.stu-box {
+  border-bottom: 1px solid #dedce0;
+  padding: 15px 15px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: row;
+  i {
+    margin-left: auto;
+    font-size: 25px;
+    color: #adaaaf;
+  }
+}
+
+.tags {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  position: relative;
+
+
+  .tag {
+    background-color: #dedce0;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+}
+
+.form {
+  padding: 0 20px;
+  margin-top: 10px;
+  form {
+    input {
+      border: none;
+      border-bottom: 1px solid #dedce0;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid black;
+      }
+
+      &::-webkit-input-placeholder {
+        font-size: 13px;
+      }
+      &::-moz-placeholder {
+        font-size: 13px;
+      }
+      &:-ms-input-placeholder {
+        font-size: 13px;
+      }
+      &:-moz-placeholder {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    height: 100%;
+    width: 100%;
+  }
+
+  .student{
+    margin-bottom: 15px;
+  }
+
+ .stud-box {
+   padding: 20px
+ }
+}
